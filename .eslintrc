@@ -1,0 +1,53 @@
+{
+	"extends": [
+		"eslint:recommended"
+	],
+
+	"parserOptions": {
+		"ecmaVersion": 2017,
+		"sourceType": "module",
+		"ecmaFeatures": {
+			"experimentalObjectRestSpread": true,
+			"impliedStrict": true,
+			"globalReturn": false
+		}
+	},
+
+	"settings": {
+		"import/extensions": [".js", ".mjs"],
+		"import/resolver": {
+			"node": {
+				"extensions": [".js", ".mjs"],
+				"moduleDirectory": [
+					"node_modules"
+				]
+			}
+		}
+	},
+
+
+	"plugins": [
+		"import"
+	],
+
+	"env": {
+		"browser": false,
+		"es6": true,
+		"mocha": true,
+		"node": true
+	},
+
+	"globals": {
+		"fetch": true
+	},
+
+	"rules": {
+		"no-console": "off",
+		"import/no-duplicates": "warn",
+		"import/no-extraneous-dependencies": ["error", {"devDependencies": ["**/test/*.js", "**/*.spec.js"]}],
+		"import/no-unresolved": ["error", {"commonjs": true}],
+		"import/no-amd": "error",
+		"import/no-commonjs": "error",
+		"import/no-webpack-loader-syntax": "error"
+	}
+}

@@ -1,0 +1,46 @@
+{
+  "name": "example-node-program",
+  "version": "0.0.0",
+  "description": "",
+  "engines": {
+    "node": ">=8.9.0",
+    "npm": ">=5.5.1"
+  },
+  "bin": {
+    "build-server": "src/__bootstrap/index.js"
+  },
+  "main": "src/__bootstrap/index.js",
+  "scripts": {
+    "start": "node .",
+    "test": "eslint ./src && jest -c ./src/__test__/__jest.config.ci.js",
+    "prepack": "npm test"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "@std/esm": "0.x.x",
+    "express": "^4.9.5",
+    "findhit-proxywrap": "0.x.x",
+    "morgan": "^1.5.2",
+    "node-fetch": "^1.5.3",
+    "regenerator-runtime": "0.x.x",
+    "response-time": "^2.2.0",
+    "serve-static": "^1.11.2",
+    "uuid": "^3.0.1"
+  },
+  "devDependencies": {
+    "eslint": "^4.0.0",
+    "eslint-plugin-import": "^2.5.0",
+    "jest": "^21.0.2",
+    "jest-junit": "^3.0.0",
+    "supertest": "^3.0.0"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "setupFiles": [
+      "<rootDir>/src/__bootstrap/polyfills.js"
+    ]
+  }
+}
