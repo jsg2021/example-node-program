@@ -21,17 +21,12 @@
   "private": true,
   "dependencies": {
     "esm": "^3.0.16",
-    "express": "^4.9.5",
-    "morgan": "^1.5.2",
-    "node-fetch": "^2.0.4",
-    "response-time": "^2.2.0",
-    "serve-static": "^1.11.2"
+    "node-fetch": "^2.0.4"
   },
   "devDependencies": {
     "eslint": "^6.0.0",
     "eslint-plugin-import": "^2.5.0",
-    "jest": "^26.0.1",
-    "supertest": "^4.0.0"
+    "jest": "^26.0.1"
   },
   "jest": {
     "testEnvironment": "node",
