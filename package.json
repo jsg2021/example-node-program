@@ -12,7 +12,7 @@
   "main": "src/__bootstrap/index.js",
   "scripts": {
     "start": "node .",
-    "test": "eslint ./src && jest -c ./src/__test__/__jest.config.ci.js",
+    "test": "eslint ./src && jest",
     "prepack": "npm test"
   },
   "keywords": [],
