@@ -20,7 +20,7 @@
   "license": "MIT",
   "private": true,
   "dependencies": {
-    "esm": "^3.0.16",
+    "esm": "^3.2.25",
     "node-fetch": "^2.0.4",
     "uuid": "^3.0.1"
   },
