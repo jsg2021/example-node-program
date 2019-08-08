@@ -27,8 +27,8 @@
   "devDependencies": {
     "eslint": "^4.0.0",
     "eslint-plugin-import": "^2.5.0",
-    "jest": "^22.4.3",
-    "jest-junit": "^3.0.0"
+    "jest": "^24.8.0",
+    "jest-junit": "^7.0.0"
   },
   "jest": {
     "testEnvironment": "node",
