@@ -21,7 +21,7 @@
   "private": true,
   "dependencies": {
     "esm": "^3.0.16",
-    "node-fetch": "^2.0.4",
+    "node-fetch": "^2.6.0",
     "uuid": "^3.0.1"
   },
   "devDependencies": {
